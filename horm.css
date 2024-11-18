@@ -1,0 +1,494 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+:root{
+  --main-color:#00A550;
+  --second-color:#ffffff;
+  --whitgreen:rgba(170, 209, 170,0.845);
+  --black:black;
+  --blue:#0098D9;
+  --footer:#222222;
+}
+body{
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--second-color);
+   height: 100px;
+   position: fixed;
+   width: 100%;
+
+  /* padding: 20px; */
+}
+.header .logo img{
+height: 180px;
+margin-top: -35px;
+margin-left: 20px;
+
+}
+.header .menu ul{
+  display: flex;
+  margin-top: 40px;
+ 
+}
+.header .menu ul li{
+  list-style: none;
+  padding: 10px;
+
+ 
+}
+.header .menu ul li a{
+ text-decoration: none;
+ color: var(--black);
+ padding: 10px;
+ font-size: 20px;
+ 
+}
+.header .ico i{
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 22px;
+  margin-top: 50px;
+  margin-right: 120px;
+}
+.header .ico i span{
+position: relative;
+bottom: 10px;
+right: 12px;
+color: var(--second-color);
+background-color: #3FBC84;
+border-radius: 50%;
+height: 10px;
+width: 20px;
+
+
+}
+.header .menu .personal{
+  display: flex;
+  position: absolute;
+  bottom: 695px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0,0,0, 0.4);
+  display: none;
+}
+.header .menu ul .per:hover .personal{
+  display: flex;
+}
+.header .menu .personal ul{
+  display: block;
+}
+.header .menu .personal ul li a{
+ margin-bottom: 35px;
+}
+.header .menu .personal span {
+  font-size: 28;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.header .menu .Bussines{
+  display: flex;
+  position: absolute;
+  bottom: 735px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0,0,0, 0.4);
+  display: none;
+
+  
+}
+.header .menu .Bussines ul{
+  display: block;
+ 
+}
+.header .menu .Bussines ul li{
+ padding-top: 10px;
+ 
+}
+
+.header .menu .Bussines ul li a{
+  margin-bottom: 100px;
+  
+ }
+ .header .menu .Bussines .service span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 190px;
+  margin-left: 20px;
+
+
+}
+.header .menu .Bussines .internet span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 190px;
+  margin-left: 20px;
+
+
+}
+.header .menu ul .buss:hover .Bussines{
+  display: flex;
+}
+
+.hero{
+  background-color: var(--main-color);
+  height: 850px;
+
+}
+.hero .round{
+  background-color: var(--second-color);
+  height: 790px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+
+
+
+}
+.hero .round .content{
+  display: flex;
+  background-color: #f2f2f2;;
+  height: 780px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+
+ 
+
+}
+.hero .round .content .info h1{
+  margin-top: 190px;
+  
+font-size: 100px;
+margin-left: 32px;
+color: var(--main-color);
+}
+.hero .round .content .info p{
+  font-size: 20px;
+  margin-left: 39px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+.hero .round .content .info a{
+ padding: 20px 45px;
+ background-color: var(--main-color);
+ text-decoration: none;
+ color: white;
+ margin-left: 40px;
+ border-radius: 10px;
+}
+.servic{
+  display: flex;
+  position: absolute;
+  bottom: -100px;
+  left: 260px;
+  gap: 40px;
+
+
+}
+.servic .box{
+
+  display: flex;
+  width: 480px;
+  height: 155px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0.3px 0.2px 12px rgba(0,0,0, 0.5);
+  margin-bottom:140px;
+  
+}
+.servic .box h4{
+  margin-top: 35px;
+  font-size: 30px;
+}
+.servic .box p{
+  font-size: 20px;
+}
+.ads{
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 10%;
+}
+.ads img{
+  width: 38%;
+  margin-left: 1%;
+}
+.ads img:hover{
+  transform: scale(1.1);
+
+}
+.ads .p{
+  margin-top: 10%;
+  margin-left: 5%;
+
+}
+.ads .p h1{
+  font-size: 50px;
+  margin-bottom: 2%
+}
+.ads .p p{
+  font-size: 27px;
+  color: rgb(80, 70, 70);
+  margin-bottom: 50px;
+  line-height: 60px;
+}
+.ads .p a{
+  padding: 20px 45px;
+  background-color: var(--main-color);
+  text-decoration: none;
+  color: white;
+  margin-left: 2px;
+  border-radius: 10px;
+  font-size: 20px;
+ }
+ .ads .p a:hover{
+  background-color: rgb(40, 179, 40);
+
+ }
+ .per11 .T{
+text-align: center;
+margin-top: 55px;
+ }
+ .per11 .T h1{
+  font-size: 45px;
+
+
+ }
+ .per11 .T p{
+  font-size: 25px;
+  color: rgba(85, 41, 41, 0.741);
+ }
+ .per11 .boxss{
+  margin-left: 30px;
+  display: flex;
+  gap: 20px;
+  margin-top: 5%;
+
+ }
+ .per11 .boxss .voice{
+  background-color: white;
+  height: 190px;
+  width: 24%;
+  text-align: center;
+  padding-top: 20px;
+  box-shadow: 2px 9px 7px rgba(0,0,0, 0.5);
+ }
+ .per11 .boxss .voice:hover{
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  transform: translateX(10px);
+
+  
+ }
+ @keyframes slide{
+  from{
+   
+    background-color: #00A550;
+  }
+  to{
+    transform: translatex(0);
+    
+  }
+ }
+
+
+
+
+
+
+
+
+ .per11 .boxss .voice i{
+  font-size: 35px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color:rgb(255, 227, 227);
+  margin-top: 25px; 
+  padding-top: 12px;
+
+ }
+ .per11 .boxss .voice span{
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 900px;
+
+ }
+
+/* ------------------------------------------------------------------------------------- */
+.per11 .boxss1{
+  margin-left: 30px;
+  display: flex;
+  gap: 20px;
+  margin-top: 2%;
+
+
+ }
+
+ .per11 .boxss1 .sms:hover{
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  transform: translateX(10px);
+
+  
+ }
+ @keyframes slide{
+  from{
+   
+    background-color: #00A550;
+  }
+  to{
+    transform: translatex(0);
+    
+  }
+ }
+
+ .per11 .boxss1 .sms{
+  background-color: white;
+  height: 190px;
+  width: 24%;
+  text-align: center;
+  padding-top: 20px;
+  border: none;
+  box-shadow: 2px 8px 7px rgba(0,0,0, 0.5);
+
+ }
+ .per11 .boxss1 .sms i{
+  font-size: 35px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color:rgb(255, 227, 227);
+  margin-top: 25px; 
+  padding-top: 12px;
+
+ }
+ .per11 .boxss1 .sms span{
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 900px;
+
+ }
+.per1{
+  padding: 25px;
+}
+/* ----------------------------------------------------------------------------- */
+.per12 .T1{
+  text-align: center;
+  margin-top: 55px;
+   }
+   .per12 .T1 h1{
+    font-size: 45px;
+  
+  
+   }
+   .per12 .T1 p{
+    font-size: 25px;
+    color: rgba(85, 41, 41, 0.741);
+   }
+   .per12 .bo{
+    display: flex;
+    padding: 30px;
+    margin-top: 50px
+
+   }
+   .per12 .bo .b1{
+    background-color: var(--main-color);
+    height: 590px;
+    width: 22%;
+    margin-left: 50px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 8px 7px rgba(0,0,0, 0.5);
+   }
+   .per12 .bo .b1:hover{
+    transform: translatey(20px);
+
+   }
+   .per12 .bo .b1 i{
+    font-size: 80px;
+    margin-left: 69px;
+    border: 5px solid white;
+    margin-top: 2.5rem;
+    padding: 20px;
+    color: var(--second-color);
+    margin-bottom: 20px;
+   
+   }
+   .per12 .bo .b1 h1{
+   font-size: 40px;
+   text-align: center;
+   color: var(--second-color);
+   
+   }
+   .per12 .bo .b1 p{
+    font-size: 20px;
+    text-align: center;
+    color: var(--second-color);
+    line-height: 50px;
+    
+    }
+    .per12 .bo .blue{
+      background-color: var(--blue);
+    }
+    .per12 .bo .black{
+      background-color: var(--black);
+    }
+
+
+
+.per11 .boxss .hov{
+  background-color: #0098D9;
+  height: 190px;
+  width:100%;
+  text-align: center;
+   margin-bottom: 90px;
+   display: none;
+}
+
+
+
+
+
+/* .per12 .bo .con{
+  background-color: var(--second-color);
+  height: 500px;
+  width: 25%;
+  box-shadow: 2px 8px 7px rgba(0,0,0, 0.5);
+  text-align: center;
+
+}
+.per12 .bo .con h4{
+  margin-top: 60px;
+  font-size: 20px;
+
+}
+.per12 .bo .con p{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+.per12 .bo .con p span{
+  font-size: 30px;
+  font-weight:lighter;
+  color: rgb(229, 215, 215);
+
+} */
